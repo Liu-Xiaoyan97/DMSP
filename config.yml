@@ -1,0 +1,22 @@
+dataset:
+  filename: "glue"
+  subset: "cola"
+  filepath:
+  label_map: [0, 1, 2, 3]
+  batch_size: 10
+  num_workers: 1
+  train: "train"
+  validation: "validation"
+  test: "validation"
+  feature1: "sentence"
+  feature2:
+  label: "label"
+  max_length: 128
+
+model:
+  vocab_size: 50257
+  hidden_dim: 64
+  ffn_dim: 128
+  num_layers: 5
+  num_classes: 4
+  lr: 1e-3
